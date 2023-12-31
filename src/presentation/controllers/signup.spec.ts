@@ -8,14 +8,28 @@ interface StutTypes {
   emailValidator: EmailValidator;
 }
 
-const makeSut = (): StutTypes => {
+const makeEmailValidator = (): EmailValidator => {
   class EmailValidatorStub implements EmailValidator {
     isValid(email: string): boolean {
       return true;
     }
   }
 
-  const emailValidator = new EmailValidatorStub();
+  return new EmailValidatorStub();
+};
+
+const makeEmailValidatorWithError = (): EmailValidator => {
+  class EmailValidatorStub implements EmailValidator {
+    isValid(email: string): boolean {
+      throw new Error();
+    }
+  }
+
+  return new EmailValidatorStub();
+};
+
+const makeSut = (): StutTypes => {
+  const emailValidator = makeEmailValidator();
   const sut = new SignUpController(emailValidator);
 
   return {
@@ -84,13 +98,7 @@ describe("SignUp Controller", () => {
   });
 
   test("Should return 500 if EmailValidator throws a ServerError", () => {
-    class EmailValidatorStub implements EmailValidator {
-      isValid(email: string): boolean {
-        throw new Error();
-      }
-    }
-
-    const emailValidator = new EmailValidatorStub();
+    const emailValidator = makeEmailValidatorWithError();
     const sut = new SignUpController(emailValidator);
     const httpRequest = {
       body: {
