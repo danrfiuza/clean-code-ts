@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1703985088983" clover="3.2.0">
-  <project timestamp="1703985088983" name="All files">
-    <metrics statements="22" coveredstatements="15" conditionals="2" coveredconditionals="1" methods="1" coveredmethods="1" elements="25" coveredelements="17" complexity="0" loc="22" ncloc="22" packages="1" files="1" classes="1"/>
+<coverage generated="1703985094671" clover="3.2.0">
+  <project timestamp="1703985094671" name="All files">
+    <metrics statements="21" coveredstatements="15" conditionals="2" coveredconditionals="1" methods="1" coveredmethods="1" elements="24" coveredelements="17" complexity="0" loc="21" ncloc="21" packages="1" files="1" classes="1"/>
     <file name="signup.ts" path="/Users/macbookpro/projects/studies/clean-code-ts/src/presentation/controllers/signup.ts">
-      <metrics statements="22" coveredstatements="15" conditionals="2" coveredconditionals="1" methods="1" coveredmethods="1"/>
+      <metrics statements="21" coveredstatements="15" conditionals="2" coveredconditionals="1" methods="1" coveredmethods="1"/>
       <line num="1" count="1" type="stmt"/>
       <line num="2" count="1" type="stmt"/>
       <line num="3" count="1" type="stmt"/>
@@ -24,8 +24,7 @@
       <line num="18" count="0" type="stmt"/>
       <line num="19" count="0" type="stmt"/>
       <line num="20" count="0" type="stmt"/>
-      <line num="21" count="0" type="stmt"/>
-      <line num="22" count="1" type="stmt"/>
+      <line num="21" count="1" type="stmt"/>
     </file>
   </project>
 </coverage>
