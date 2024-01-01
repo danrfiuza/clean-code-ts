@@ -1,22 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1704124903852" clover="3.2.0">
-  <project timestamp="1704124903852" name="All files">
-    <metrics statements="79" coveredstatements="59" conditionals="14" coveredconditionals="11" methods="6" coveredmethods="3" elements="99" coveredelements="73" complexity="0" loc="79" ncloc="79" packages="5" files="6" classes="6"/>
-    <package name="domain.models">
-      <metrics statements="6" coveredstatements="0" conditionals="1" coveredconditionals="0" methods="1" coveredmethods="0"/>
-      <file name="account.ts" path="/Users/macbookpro/projects/studies/clean-code-ts/src/domain/models/account.ts">
-        <metrics statements="6" coveredstatements="0" conditionals="1" coveredconditionals="0" methods="1" coveredmethods="0"/>
-        <line num="1" count="0" type="cond" truecount="0" falsecount="1"/>
-        <line num="2" count="0" type="stmt"/>
-        <line num="3" count="0" type="stmt"/>
-        <line num="4" count="0" type="stmt"/>
-        <line num="5" count="0" type="stmt"/>
-        <line num="6" count="0" type="stmt"/>
-      </file>
-    </package>
-    <package name="domain.use-cases">
+<coverage generated="1704125446860" clover="3.2.0">
+  <project timestamp="1704125446860" name="All files">
+    <metrics statements="76" coveredstatements="59" conditionals="14" coveredconditionals="11" methods="6" coveredmethods="3" elements="96" coveredelements="73" complexity="0" loc="76" ncloc="76" packages="4" files="6" classes="6"/>
+    <package name="domain.usecases">
       <metrics statements="11" coveredstatements="0" conditionals="1" coveredconditionals="0" methods="1" coveredmethods="0"/>
-      <file name="add-account.ts" path="/Users/macbookpro/projects/studies/clean-code-ts/src/domain/use-cases/add-account.ts">
+      <file name="add-account.ts" path="/Users/macbookpro/projects/studies/clean-code-ts/src/domain/usecases/add-account.ts">
         <metrics statements="11" coveredstatements="0" conditionals="1" coveredconditionals="0" methods="1" coveredmethods="0"/>
         <line num="1" count="0" type="cond" truecount="0" falsecount="1"/>
         <line num="2" count="0" type="stmt"/>
@@ -31,9 +19,16 @@
         <line num="11" count="0" type="stmt"/>
       </file>
     </package>
-    <package name="presentation.controllers">
-      <metrics statements="50" coveredstatements="50" conditionals="10" coveredconditionals="10" methods="2" coveredmethods="2"/>
-      <file name="signup.ts" path="/Users/macbookpro/projects/studies/clean-code-ts/src/presentation/controllers/signup.ts">
+    <package name="presentation.controllers.signup">
+      <metrics statements="54" coveredstatements="50" conditionals="11" coveredconditionals="10" methods="3" coveredmethods="2"/>
+      <file name="signup-protocols.ts" path="/Users/macbookpro/projects/studies/clean-code-ts/src/presentation/controllers/signup/signup-protocols.ts">
+        <metrics statements="4" coveredstatements="0" conditionals="1" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="1" count="0" type="cond" truecount="0" falsecount="1"/>
+        <line num="2" count="0" type="stmt"/>
+        <line num="3" count="0" type="stmt"/>
+        <line num="4" count="0" type="stmt"/>
+      </file>
+      <file name="signup.ts" path="/Users/macbookpro/projects/studies/clean-code-ts/src/presentation/controllers/signup/signup.ts">
         <metrics statements="50" coveredstatements="50" conditionals="10" coveredconditionals="10" methods="2" coveredmethods="2"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
@@ -106,12 +101,11 @@
       </file>
     </package>
     <package name="presentation.protocols">
-      <metrics statements="3" coveredstatements="0" conditionals="1" coveredconditionals="0" methods="1" coveredmethods="0"/>
+      <metrics statements="2" coveredstatements="0" conditionals="1" coveredconditionals="0" methods="1" coveredmethods="0"/>
       <file name="index.ts" path="/Users/macbookpro/projects/studies/clean-code-ts/src/presentation/protocols/index.ts">
-        <metrics statements="3" coveredstatements="0" conditionals="1" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <metrics statements="2" coveredstatements="0" conditionals="1" coveredconditionals="0" methods="1" coveredmethods="0"/>
         <line num="1" count="0" type="cond" truecount="0" falsecount="1"/>
         <line num="2" count="0" type="stmt"/>
-        <line num="3" count="0" type="stmt"/>
       </file>
     </package>
   </project>

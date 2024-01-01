@@ -1,14 +1,17 @@
-import { AddAccount, AddAccountModel } from "src/domain/use-cases/add-account";
-import { MissingParamError, InvalidParamError } from "../errors";
-import { ServerError } from "../errors/server-error";
-import { EmailValidator } from "../protocols";
+import { MissingParamError, InvalidParamError } from "../../errors";
+import { ServerError } from "../../errors/server-error";
 import { SignUpController } from "./signup";
-import { AccountModel } from "src/domain/models/account";
+import {
+  EmailValidator,
+  AccountModel,
+  AddAccount,
+  AddAccountModel,
+} from "./signup-protocols";
 
 interface StutTypes {
   sut: SignUpController;
   emailValidator: EmailValidator;
-  addAccount: AddAccount
+  addAccount: AddAccount;
 }
 
 const makeEmailValidator = (): EmailValidator => {
